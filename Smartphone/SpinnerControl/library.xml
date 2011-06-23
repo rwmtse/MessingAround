@@ -30,6 +30,6 @@
     </configuration>
   </configurations>    
   <features>
-    <feature id="blackberry.ui.Spinner" version="1.0.0">Popup Spinner control</feature>
+    <feature id="blackberry.ui.Spinner">Popup Spinner control</feature>
   </features>
 </library>

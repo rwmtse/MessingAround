@@ -2,7 +2,7 @@
 
 When building an API for the BlackBerry WebWorks SDK for Smartphones, you will start by creating a sub-directory within this _**Smartphone**_ directory.  Pick a name that suits your extension and try not to use spaces in your directory name.  It just plain makes things easier.  
 
-As a recipe for building your API you can use the _**SpinnerControl**_ as a good example.  In your API directory you will want to create a source code directory called _**src**_ where your actual API code will reside.  You will also need to create a _**library.xml**_ file at the root of this directory.  More information on the __**library.xml**_ can be found below in this README.
+As a recipe for building your API you can use the _**SpinnerControl**_ as a good example.  In your API directory you will want to create a source code directory called _**src**_ where your actual API code will reside.  You will also need to create a _**library.xml**_ file at the root of this directory.  More information on the _**library.xml**_ can be found below in this README.
 
 A _**README.md**_ file also needs to be created at the root of your directory where you can place all the information about how to use and configure your API.  The _**SpinnerControl**_ is a good example of what type of information to include in your README.md file.  This README.md file uses Markdown wiki formatting. 
 

@@ -1,0 +1,57 @@
+# Scroll Event
+The scrollEvent object will allow you to subscribe to scrolling events on the screen.  This will allow you to trap scrolling events and react to new scroll positions
+
+**Author:** [Tim Neil](https://github.com/tneil)
+
+## Tested On
+
+* BlackBerry Storm 9550 v5.0.0.469
+* BlackBerry Torch 9800 v6.0.0.190
+* BlackBerry Torch 9800 v6.0.0.246
+
+**Requires BlackBerry WebWorks SDK for Smartphones v2.0 or higher**
+
+Have a problem with this extension?  [Log an Issue](https://github.com/blackberry/WebWorks/issues) or contact the [Author](https://github.com/tneil)
+
+## How To Configure The Extension For Use
+
+1. Locate your BlackBerry WebWorks SDK for Smartphone extensions directory using your File Explorer.  Default path is _**C:\Program Files\Research In Motion\BlackBerry WebWorks Packager\ext**_
+
+2. Create a new _**ScrollEvent**_ directory in the _**ext**_ directory
+
+3. Download the source from this repository and unzip it to a location on your computer
+
+4. Using File Explorer browse to this extension's downloaded source code _**Smartphone\ScrollEvent**_
+
+5. Copy the _**library.xml**_ file from the downloaded _**Smartphone\ScrollEvent**_ directory to your new _**ext\ScrollEvent**_ directory
+
+6. Copy the downloaded _**Smartphone\ScrollEvent\src\blackberry**_ directory to your new _**ext\ScrollEvent\blackberry**_ directory
+
+**NOTE:** Be sure to back-up this _**ext\ScrollEvent**_ directory in your WebWorks SDK extensions directory before performing a WebWorks SDK upgrade. Simply copy it back into the _**ext**_ directory after you have completed your SDK upgrade.
+
+## Required Feature ID
+Whenever you use the below feature id in any of your WebWorks applications this extension will be loaded for use.
+
+    <feature id="blackberry.ui.scrollEvent" />
+
+## Summary
+
+    static void onScrollStart(callback : function() )
+    static void onScrollEnd(callback : function(verticalPosition : Number, horizontalPosition : Number) )
+
+## Code Example
+
+    function foo()
+    {
+      blackberry.ui.scrollEvent.onScrollStart( function() {
+        alert('starting to scroll');
+      });
+
+      blackberry.ui.scrollEvent.onScrollEnd(function(vPos, hPos) {
+        alert('Vertical Position: ' + vPos + ' Horizontal Position: ' + hPos);
+      });
+    }
+
+## Change Log
+**Jun 23, 2011 -** Changed the feature ID and object name from _blackberry.ui.event_ to _blackberry.ui.scrollEvent_
+

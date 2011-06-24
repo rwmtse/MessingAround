@@ -17,17 +17,17 @@ Have a problem with this extension?  [Log an Issue](https://github.com/blackberr
 
 1. Locate your BlackBerry WebWorks SDK for Smartphone extensions directory using your File Explorer.  Default path is _**C:\Program Files\Research In Motion\BlackBerry WebWorks Packager\ext**_
 
-2. Create a new _**ScrollEvent**_ directory in the _**ext**_ directory
+2. Create a new _**blackberry.ui.scrollEvent**_ directory in the _**ext**_ directory
 
 3. Download the source from this repository and unzip it to a location on your computer
 
 4. Using File Explorer browse to this extension's downloaded source code _**Smartphone\ScrollEvent**_
 
-5. Copy the _**library.xml**_ file from the downloaded _**Smartphone\ScrollEvent**_ directory to your new _**ext\ScrollEvent**_ directory
+5. Copy the _**library.xml**_ file from the downloaded _**Smartphone\ScrollEvent**_ directory to your new _**ext\blackberry.ui.scrollEvent**_ directory
 
-6. Copy the downloaded _**Smartphone\ScrollEvent\src\blackberry**_ directory to your new _**ext\ScrollEvent\blackberry**_ directory
+6. Copy the downloaded _**Smartphone\ScrollEvent\src\blackberry**_ directory to your new _**ext\blackberry.ui.scrollEvent\blackberry**_ directory
 
-**NOTE:** Be sure to back-up this _**ext\ScrollEvent**_ directory in your WebWorks SDK extensions directory before performing a WebWorks SDK upgrade. Simply copy it back into the _**ext**_ directory after you have completed your SDK upgrade.
+**NOTE:** Be sure to back-up this _**ext\blackberry.ui.scrollEvent**_ directory in your WebWorks SDK extensions directory before performing a WebWorks SDK upgrade. Simply copy it back into the _**ext**_ directory after you have completed your SDK upgrade.
 
 ## Required Feature ID
 Whenever you use the below feature id in any of your WebWorks applications this extension will be loaded for use.

@@ -34,7 +34,7 @@ The below example uses the Spinner Control details to show what information need
       </configurations>   
  
       <features>
-        <feature id="blackberry.ui.Spinner">Popup Spinner control</feature>
+        <feature id="blackberry.ui.Spinner" version="1.0.0.0">Popup Spinner control</feature>
       </features>
 
     </library>
@@ -48,6 +48,8 @@ The below example uses the Spinner Control details to show what information need
 **library\configurations\configuration\src.path** This is the name of the root directory that is found in your extensions _**src**_ directory
 
 **library\features\feature.id** This is the feature ID of your JavaScript extension that will be used in an app's config.xml file.  Yes... it is in here twice!
+
+**library\features\feature.version** This attribute is required but doesn't serve any meaning.  Leaving it at _1.0.0.0_ is all you need to do.
 
 ## Testing Your API
 

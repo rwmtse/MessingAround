@@ -57,12 +57,12 @@ You can test your API with an existing installed WebWorks SDK for Smartphones by
 
 1. Locate your BlackBerry WebWorks SDK for Smartphone extensions directory using your File Explorer.  Default path is _**C:\Program Files\Research In Motion\BlackBerry WebWorks Packager\ext**_
 
-2. Create a new directory for your API in the _**ext**_ directory. For now let's call it _**MyFancyAPI**_
+2. Create a new directory for your API in the _**ext**_ directory. Make sure that this new directory is the same as your feature id _**blackberry.ui.Spinner**_
 
-3. Copy your _**library.xml**_ file into to your new _**ext\MyFancyAPI**_ directory
+3. Copy your _**library.xml**_ file into to your new _**ext\blackberry.ui.Spinner**_ directory
 
-4. Copy your root code directory(specified in the library\configurations\configuration\src.path) to your new _**ext\MyFancyAPI**_ directory
+4. Copy your root code directory(specified in the library\configurations\configuration\src.path) to your new _**ext\blackberry.ui.Spinner**_ directory
 
-5. Create a WebWorks Application using your API and create a feature element specifying the ID of your API.  &lt;feature id="my.fancy.api" /&gt;
+5. Create a WebWorks Application using your API and create a feature element specifying the ID of your API.  &lt;feature id="blackberry.ui.Spinner" /&gt;
 
 6. Build your application using the _**bbwp.exe**_ command line and test your application on the desired simulator

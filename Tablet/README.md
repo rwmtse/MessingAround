@@ -9,7 +9,7 @@ A _**README.md**_ file also needs to be created at the root of your directory wh
 
 ## Tablet OS API Tutorial
 
-You can find an [API tutorial](http://supportforums.blackberry.com/t5/Web-and-WebWorks-Development/Building-a-BlackBerry-WebWorks-JavaScript-Extension/ta-p/494139) on creating JavaScript API extensions for Tablet OS created by a member of the community. 
+You can find an [API tutorial](http://supportforums.blackberry.com/t5/Web-and-WebWorks-Development/Tutorial-for-Writing-WebWorks-Extension-for-PlayBook/m-p/1172987) on creating JavaScript API extensions for Tablet OS created by a member of the community. 
 
 ## library.xml Formatting
 

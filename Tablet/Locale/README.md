@@ -1,5 +1,5 @@
 # Locale Information
-The Locale API will allow you to retrieve both the locale string based on the device system settings, as well as the locale string configured for the current application.
+The Locale API will allow you to retrieve the locale string based on the device system settings, as well as the locale string configured for the current application.
 
 **Author:** [Tim Neil](https://github.com/tneil)
 

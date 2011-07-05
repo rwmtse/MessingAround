@@ -1,5 +1,5 @@
 # Locale Information
-The scrollEvent object will allow you to subscribe to scrolling events on the screen.  This will allow you to trap scrolling events and react to new scroll positions
+The Locale API will allow you to retrieve both the locale string based on the device system settings, as well as the locale string configured for the current application.
 
 **Author:** [Tim Neil](https://github.com/tneil)
 

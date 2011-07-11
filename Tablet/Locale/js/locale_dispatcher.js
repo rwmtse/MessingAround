@@ -18,14 +18,11 @@
 	
 	function LocaleDispatcher() {
 	}
+
+	LocaleDispatcher.prototype.__defineGetter__("deviceLocale", function() { return new blackberry.transport.RemoteFunctionCall(LOCALE_API_URL + "/device").makeSyncCall(); });	
 	
-	LocaleDispatcher.prototype.getDeviceLocale = function() {
-		return new blackberry.transport.RemoteFunctionCall(LOCALE_API_URL + "/device").makeSyncCall();
-	};
-			
-	LocaleDispatcher.prototype.getAppLocale = function() {
-		return new blackberry.transport.RemoteFunctionCall(LOCALE_API_URL + "/app").makeSyncCall();
-	}
+	LocaleDispatcher.prototype.__defineGetter__("appLocale", function() { return new blackberry.transport.RemoteFunctionCall(LOCALE_API_URL + "/app").makeSyncCall(); });	
+	
 
 	blackberry.Loader.javascriptLoaded("blackberry.system.locale", LocaleDispatcher);	
 })();

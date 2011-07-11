@@ -16,11 +16,9 @@
 (function () {
 	
 	function Locale(disp) {
-		this.constructor.prototype.getDeviceLocale = function() { return disp.getDeviceLocale(); };
-		
-		this.constructor.prototype.getAppLocale = function() { return disp.getAppLocale(); };
+		this.constructor.prototype.__defineGetter__("deviceLocale", function() { return disp.deviceLocale; });
+		this.constructor.prototype.__defineGetter__("appLocale", function() { return disp.appLocale; });
 	}
-	
 	
 	blackberry.Loader.javascriptLoaded("blackberry.system.locale", Locale);
 })();

@@ -34,8 +34,8 @@ Whenever you use the below feature id in any of your WebWorks applications this 
 
 ## Summary
 
-    static String getDeviceLocale() // Returns locale setting of the device
-    static String getAppLocale() // Returns locale of current application
+    static String deviceLocale // Returns locale setting of the device
+    static String appLocale // Returns locale of current application
 
 ## Code Example
 
@@ -44,11 +44,11 @@ Whenever you use the below feature id in any of your WebWorks applications this 
         <meta name="viewport" id="viewport" content="height=device-height,width=device-width,user-scalable=no" />
         <script type="text/javascript" >
           function deviceLocale(){
-    	     alert(blackberry.system.locale.getDeviceLocale());
+    	     alert(blackberry.system.locale.deviceLocale);
     		}
     		
     	  function appLocale() {
-    		alert(blackberry.system.locale.getAppLocale());
+    		alert(blackberry.system.locale.appLocale);
     	  }
         </script>
       </head>

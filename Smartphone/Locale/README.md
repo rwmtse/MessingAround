@@ -6,6 +6,8 @@ The Locale API will allow you to retrieve the locale string based on the device 
 ## Tested On
 
 * BlackBerry Storm 9550 v5.0.0.469
+* BlackBerry Bold 9700 v5.0.0.469
+* BlackBerry Torch 9800 v6.0.0.227
 
 **Requires BlackBerry WebWorks SDK for Smartphones v2.0 or higher**
 

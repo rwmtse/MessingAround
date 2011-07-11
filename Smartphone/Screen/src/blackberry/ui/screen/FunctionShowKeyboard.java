@@ -37,10 +37,25 @@ public class FunctionShowKeyboard extends ScriptableFunction {
 	}
    
     public Object invoke(Object thiz, Object[] args) throws Exception {	
-		VirtualKeyboard vk = _browserField.getScreen().getVirtualKeyboard();
-		if (vk != null && vk.isSupported()) {
-			vk.setVisibility(VirtualKeyboard.SHOW);
-		}
+	
+	
+		new Thread () {
+				public void run() {
+					try
+					{
+						VirtualKeyboard vk = _browserField.getScreen().getVirtualKeyboard();
+						if (vk != null && vk.isSupported()) {
+							vk.setVisibility(VirtualKeyboard.SHOW);
+						}
+					}
+					catch (Exception e) {
+						//throw new RuntimeException(e.getMessage());
+					}
+				}
+			}.start();
+	
+
+		
 		return UNDEFINED;	  
     }
 

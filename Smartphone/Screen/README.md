@@ -11,6 +11,9 @@ The screen object will allow you to subscribe to scrolling events on the screen,
 
 **Requires BlackBerry WebWorks SDK for Smartphones v2.0 or higher**
 
+## Known Issues
+* Currently the setTitle() function has painting problems and isn't very functional
+
 Have a problem with this extension?  [Log an Issue](https://github.com/blackberry/WebWorks/issues) or contact the [Author](https://github.com/tneil)
 
 ## How To Configure The Extension For Use

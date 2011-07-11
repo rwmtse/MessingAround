@@ -34,8 +34,8 @@ Whenever you use the below feature id in any of your WebWorks applications this 
 
 ## Summary
 
-    static String getDeviceLocale() // Returns locale setting of the device
-    static String getAppLocale() // Returns locale of current application
+    static String deviceLocale // Returns locale setting of the device
+    static String appLocale // Returns locale of current application
 
 ## Code Example
 

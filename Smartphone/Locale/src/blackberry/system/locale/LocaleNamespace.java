@@ -20,37 +20,28 @@ import net.rim.device.api.script.Scriptable;
 import net.rim.device.api.ui.ScrollChangeListener;
 import net.rim.device.api.ui.Manager;
 import net.rim.device.api.ui.VirtualKeyboard;
-import java.util.Timer;
-import java.util.TimerTask;
-import java.util.Date;
+import net.rim.device.api.i18n.Locale;
 
-import blackberry.system.locale.FunctionDeviceLocale;
-import blackberry.system.locale.FunctionAppLocale;
+
 
 public class LocaleNamespace extends Scriptable {
 
-	private static final String FIELD_DEVICELOCALE = FunctionDeviceLocale.NAME;
-	private static final String FIELD_APPLOCALE = FunctionAppLocale.NAME;
+	private static final String FIELD_DEVICELOCALE = "deviceLocale";
+	private static final String FIELD_APPLOCALE = "appLocale";
 	public static final String NAME = "blackberry.system.locale"; 
-	private FunctionDeviceLocale _deviceLocale = null;
-	private FunctionAppLocale _appLocale = null;
+
 	
-	public LocaleNamespace() {
+/*	public LocaleNamespace() {
 		
-		// Create our functions
-		_deviceLocale = new FunctionDeviceLocale();
-		_appLocale = new FunctionAppLocale();
-		
-		
-		
-	}
+			
+	}*/
 
     public Object getField(String name) throws Exception {
         if (name.equals(FIELD_DEVICELOCALE)) {
-            return _deviceLocale;
+            return new String(Locale.getDefaultForSystem().toString());	  
         }
 		else if (name.equals(FIELD_APPLOCALE)) {
-            return _appLocale;
+            return new String(Locale.getDefault().toString());	  
         }
 		
 		

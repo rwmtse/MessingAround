@@ -44,11 +44,11 @@ Whenever you use the below feature id in any of your WebWorks applications this 
         <meta name="viewport" id="viewport" content="height=device-height,width=device-width,user-scalable=no" />
         <script type="text/javascript" >
           function deviceLocale(){
-    	     alert(blackberry.system.locale.getDeviceLocale());
+    	     alert(blackberry.system.locale.deviceLocale);
     		}
     		
     	  function appLocale() {
-    		alert(blackberry.system.locale.getAppLocale());
+    		alert(blackberry.system.locale.appLocale);
     	  }
         </script>
       </head>
